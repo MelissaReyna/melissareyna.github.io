@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Melissa Reyna">
+    <meta name="description" content="Portfolio Melissa Reyna 2023">
+
+    <!-- Title -->
+    <title>Melissa Reyna Portfolio</title>
+
+    <!-- External css -->
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/assets/logos/icons/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="img/assets/logos/icons/apple-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="img/assets/logos/icons/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="img/assets/logos/icons/apple-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="img/assets/logos/icons/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="img/assets/logos/icons/apple-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="img/assets/logos/icons/apple-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="img/assets/logos/icons/apple-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/assets/logos/icons/apple-icon-180x180.png"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="img/assets/logos/icons/android-icon-192x192.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/assets/logos/icons/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="img/assets/logos/icons/favicon-96x96.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/assets/logos/icons/favicon-16x16.png"/>
+    <link rel="manifest" href="img/content/manifest.json"/>
+
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="img/assets/logos/isotipo_mr.png"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <link rel="icon" type="image/x-icon" href="img/assets/logos/icons/favicon.ico"/>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Oswald:500%7CPoppins:200,300,300i,400,400i,600,600i%7CMaterial+Icons" />
+
+    <!-- manifest -->
+    <link rel="manifest" href="img/content/manifest.json" />
+</head>
+
+<body data-barba="wrapper">
+    <!-- Loading Spinner-->
+    <svg class="spinner js-spinner d-lg-none d-block" width="65px" height="65px" viewBox="0 0 66 66"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle class="spinner__path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30">
+        </circle>
+    </svg>
+    <!-- - Loading Spinner-->
+
+    <!-- Cursor follower-->
+    <div class="cursor" id="js-cursor">
+        <div class="cursor__follower">
+            <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <circle id="inner" cx="50" cy="50" r="40"></circle>
+                <circle id="outter" cx="50" cy="50" r="40"></circle>
+            </svg>
+        </div>
+    </div>
+    <!-- - Cursor follower-->
+
+    <!-- Page preloader -->
+    <div class="preloader">
+        <div class="preloader__curtain bg-dark-2"></div>
+    </div>
+    <!-- - Page preloader -->
+
+    <!-- Pahe header -->
+    <header class="header header_fixed container-fluid">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-auto header__col-left">
+                <a class="logo" href="index.html">
+                    <img src="img/assets/logos/logo-white.png" alt="">
+                </a>
+            </div>
+            <div class="col-auto header__col-right">
+                <div class="header__burger" id="js-burger">
+                    <div class="header__burger-line"></div>
+                    <div class="header__burger-line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="header__wrapper-overlay-menu">
+            <div class="header__overlay-menu-back material-icons" id="js-submenu-back">arrow_back</div>
+            <div class="header__wrapper-menu">
+                <ul class="menu-overlay js-menu-overlay">
+                    <li><a href="index.html" data-pjax-link="overlayMenu">
+                            <div class="menu-overlay__item-wrapper"><span class="split-chars">Home</span></div>
+                        </a>
+                    </li>
+                    <li><a href="portfolio.html" data-pjax-link="overlayMenu">
+                            <div class="menu-overlay__item-wrapper"><span class="split-chars">Portfolio</span></div>
+                        </a>
+                    </li>
+                    <li><a href="services.html" data-pjax-link="overlayMenu">
+                            <div class="menu-overlay__item-wrapper"><span class="split-chars">Services</span></div>
+                        </a>
+                    </li>
+                    <li><a href="about.html" data-pjax-link="overlayMenu">
+                            <div class="menu-overlay__item-wrapper"><span class="split-chars">About</span></div>
+                        </a>
+                    </li>
+                    <li><a href="contact.html" data-pjax-link="overlayMenu">
+                            <div class="menu-overlay__item-wrapper"><span class="split-chars">Contact</span></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- - menu -->
+            <div class="header__wrapper-overlay-widgets color-white bg-dark">
+                <div class="header__wrapper-property">
+                    <div class="figure-property">
+                        <div class="figure-property__wrapper-heading">
+                            <h6 class="split-text">Email</h6>
+                        </div>
+                        <div class="figure-property__content">
+                            <ul class="figure-property__list">
+                                <li class="figure-property__item">
+                                    <div class="split-text">
+                                        <a href="mailto:melissahaydee21@gmail.com">melissahaydee21@gmail.com</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__wrapper-property">
+                    <div class="figure-property">
+                        <div class="figure-property__wrapper-heading">
+                            <h6 class="split-text">Behance</h6>
+                        </div>
+                        <div class="figure-property__content">
+                            <ul class="figure-property__list">
+                                <li class="figure-property__item">
+                                    <div class="split-text">
+                                        <a href="https://www.behance.net/melissareyna21" target="_blank">@melissareyna21</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__wrapper-property">
+                    <div class="figure-property">
+                        <div class="figure-property__wrapper-heading">
+                            <h6 class="split-text">LinkedIn</h6>
+                        </div>
+                        <div class="figure-property__content">
+                            <ul class="figure-property__list">
+                                <li class="figure-property__item">
+                                    <div class="split-text">
+                                        <a href="https://www.linkedin.com/in/melissareyna21/" target="_blank">@melissareyna21</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__wrapper-property">
+                    <div class="figure-property">
+                        <div class="figure-property__wrapper-heading">
+                            <h6 class="split-text">Github</h6>
+                        </div>
+                        <div class="figure-property__content">
+                            <ul class="figure-property__list">
+                                <li class="figure-property__item">
+                                    <div class="split-text">
+                                        <a href="https://github.com/MelissaReyna" target="_blank">@MelissaReyna</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__wrapper-property">
+                    <div class="figure-property">
+                        <div class="figure-property__wrapper-heading">
+                            <h6 class="split-text">Location</h6>
+                        </div>
+                        <div class="figure-property__content">
+                            <ul class="figure-property__list">
+                                <li class="figure-property__item">
+                                    <div class="split-text">Toronto, ON</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- - information -->
+        </div>
+    </header>
+    <!-- Pahe header -->
+
+    <!-- Page main-->
+    <main class="page-wrapper bg-dark color-white" id="js-smooth-scroll" data-barba="container" data-barba-namespace="dark">
+        <!-- section Masthead -->
+        <section class="section section-masthead section_pt" data-os-animation="data-os-animation">
+            <div class="container-fluid">
+                <header class="row section-masthead__header">
+                    <div class="col">
+                        <h1 class="split-chars">Ripley's Aquarium Brochure</h1>
+                        <div class="section__headline"></div>
+                    </div>
+                </header>
+                <div class="row section-masthead__properties">
+                    <div class="col-lg-auto col-sm-6 section-masthead__wrapper-property">
+                        <div class="figure-property">
+                            <div class="figure-property__wrapper-heading">
+                                <h6 class="split-text">Category</h6>
+                            </div>
+                            <div class="figure-property__content">
+                                <ul class="figure-property__list">
+                                    <li class="figure-property__item">
+                                        <div class="split-text">Print Design </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto col-sm-6 section-masthead__wrapper-property">
+                        <div class="figure-property">
+                            <div class="figure-property__wrapper-heading">
+                                <h6 class="split-text">Client</h6>
+                            </div>
+                            <div class="figure-property__content">
+                                <ul class="figure-property__list">
+                                    <li class="figure-property__item">
+                                        <div class="split-text">Ripley's Aquarium of Canada</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto col-sm-6 section-masthead__wrapper-property">
+                        <div class="figure-property">
+                            <div class="figure-property__wrapper-heading">
+                                <h6 class="split-text">Date</h6>
+                            </div>
+                            <div class="figure-property__content">
+                                <ul class="figure-property__list">
+                                    <li class="figure-property__item">
+                                        <div class="split-text">February, 2023</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto col-sm-6 section-masthead__wrapper-property">
+                        <div class="figure-property">
+                            <div class="figure-property__wrapper-heading">
+                                <h6 class="split-text">Software</h6>
+                            </div>
+                            <div class="figure-property__content">
+                                <ul class="figure-property__list">
+                                    <li class="figure-property__item">
+                                        <div class="split-text">
+                                            Indesign <br>
+                                            Photoshop <br>
+                                            Illustrator
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_h-800 section-masthead__background section-masthead__background_bottom section_h-900"
+                data-art-parallax="data-art-parallax" data-art-parallax-factor="0.2">
+                <div class="art-parallax__bg lazy-bg" data-src="img/assets/p6_brochure/brochure_01.jpg"></div>
+            </div>
+        </section>
+        <!-- - section Masthead -->
+
+        <!-- section About project -->
+        <section class="section section-content section_pt" data-os-animation="data-os-animation">
+            <div class="container section-content__container">
+                <div class="row justify-content-between section-content__row">
+                    <header class="col-lg-5 section__header section-content__inner_header">
+                        <h2 class="split-chars">About the project</h2>
+                        <div class="section__headline"></div>
+                    </header>
+                    <div class="col-lg-6 section-content__inner section-content__inner_text">
+                        <h3 class="fs-14">
+                            Immerse yourself in the world of aquatic wonder as we bring to life the mesmerizing beauty of marine life through stunning visuals and thoughtful design. From the vibrant colours of tropical fish to the graceful dance of sea creatures, our brochure showcases the awe-inspiring diversity that thrives beneath the waves. 
+                            <br><br>Dive into discovery with our meticulously crafted brochure that captures the magic of the ocean within its folds.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- - section About project -->
+        
+        <!-- section Mockup 01 -->
+        <section class="section section-composition flex-lg-row-reverse">
+            <div class="section-composition__content color-white" data-os-animation="data-os-animation">
+            </div>
+            <div class="section-composition__image color-white">
+                <div class="lazy">
+                    <img data-src="img/assets/p6_brochure/brochure_02.jpg" width="981" height="715" src="#" alt="" />
+                </div>
+            </div>
+        </section>
+        <!-- - section Mockup 01 -->
+
+        <!-- section Mockup 02 -->
+        <section class="section section-composition flex-lg-row-reverse">
+            <div class="section-composition__image color-white">
+                <div class="lazy">
+                    <img data-src="img/assets/p6_brochure/brochure_03.jpg" width="981" height="715" src="#" alt="" />
+                </div>
+            </div>
+            <div class="section-composition__content color-white" data-os-animation="data-os-animation">
+            </div>
+        </section>
+        <!-- - section Mockup 02 -->
+
+        <!-- section Nav Projects -->
+        <section class="section section-nav-projects container-fluid no-gutters">
+            <div class="row no-gutters h-100">
+                <a class="col-md-6 section-nav-projects__inner section-nav-projects__inner_prev" href="project_05.html"
+                    data-pjax-link="navProjects" data-post-id="2">
+                    <div class="section-nav-projects__label section-nav-projects__label_prev">Prev</div>
+                    <div class="section-nav-projects__arrow">
+                        <i class="material-icons">keyboard_arrow_left</i>
+                    </div>
+                    <h3>La Fontaine Menu</h3>
+                </a>
+                <a class="col-md-6 section-nav-projects__inner section-nav-projects__inner_next"
+                    href="project_07.html" data-pjax-link="navProjects" data-post-id="4">
+                    <div class="section-nav-projects__label section-nav-projects__label_next">Next</div>
+                    <h3>Editorial Illustrations</h3>
+                    <div class="section-nav-projects__arrow">
+                        <i class="material-icons">keyboard_arrow_right</i>
+                    </div>
+                </a>
+            </div>
+            <div class="section-nav-projects__backgrounds">
+                <div class="section-nav-projects__background section-nav-projects__background_prev lazy-bg"
+                    data-src="img/assets/p5_menu/menu_01.jpg" data-background-for="2"></div>
+                <div class="section-nav-projects__background section-nav-projects__background_next lazy-bg"
+                    data-src="img/assets/p7_illustrations/illustrations_01.jpg" data-background-for="4"></div>
+                <div class="overlay overlay_dark section-nav-projects__overlay"></div>
+            </div>
+        </section>
+        <!-- - section Nav Projects -->
+
+        <!-- section footer -->
+        <footer class="footer container-fluid">
+            <div class="footer__area-primary2">
+                <div class="row">
+                    <div class="col-lg-4 footer__col">
+                        
+                    </div>
+                    <div class="col-lg-4 footer__col">
+                        <section class="widget widget_ruben_social">
+                            <ul class="social">
+                                <li class="social__item"><a class="fa fa-envelope" href="mailto:melissahaydee21@gmail.com"></a></li>
+                                <li class="social__item"><a class="fa fa-behance" href="https://www.behance.net/melissareyna21" target="_blank"></a></li>
+                                <li class="social__item"><a class="fa fa-linkedin" href="https://www.linkedin.com/in/melissareyna21/" target="_blank"></a></li>
+                                <li class="social__item"><a class="fa fa-github" href="https://github.com/MelissaReyna" target="_blank"></a></li>
+                            </ul>
+                            <p>Toronto, ON</p>
+                        </section>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="footer__area-secondary">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 footer__col">
+                        <section class="widget widget_ruben_copyright">
+                            <small>© <span id="year"></span> by Melissa Reyna. All rights reserved.</small>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- - section footer -->
+    </main>
+
+    <canvas id="js-webgl"></canvas>
+    <!-- - Page main-->
+
+    <!-- Scripts -->
+    <script src="js/vendor.js"></script>
+    <script src="js/components.js"></script>
+</body>
+
+</html>
